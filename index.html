@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convocatoria Opciones de Grado Sin Costo 2027-1 · Areandina</title>
+<meta name="description" content="Convocatoria de Opciones de Grado sin costo 2027-1 · Administración de Empresas Virtual · Fundación Universitaria del Área Andina. Inscripciones del 1 al 30 de octubre de 2026.">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+<style>
+html{font-size:17px} /* Base ampliada para mejor legibilidad en PC y móvil */
+:root{
+  --verde:#7fb536; --verde-l:#87c23a; --verde-o:#527523; --verde-p:#253610;
+  --magenta:#e6007e; --magenta-l:#f20085; --magenta-o:#a6005b;
+  --negro:#000; --blanco:#fff; --gris:#4a4a4a; --gris-osc:#333333; --gris-claro:#f4f6f0;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Brown','Montserrat',system-ui,sans-serif;letter-spacing:-0.025em;line-height:1.65;color:var(--negro);background:var(--blanco);overflow-x:hidden}
+h1,h2,h3,h4{font-weight:700;line-height:1.2;letter-spacing:-0.025em}
+a{text-decoration:none;color:inherit}
+.contenedor{max-width:1240px;margin:0 auto;padding:0 24px}
+:focus-visible{outline:3px solid var(--magenta);outline-offset:3px;border-radius:6px}
+
+/* HEADER — logo arriba y centrado (regla universal del manual) */
+header{position:sticky;top:0;z-index:900;background:var(--blanco);transition:box-shadow .3s}
+header.sombra{box-shadow:0 6px 22px rgba(37,54,16,.14)}
+.barra-logo{padding:14px 24px 8px;text-align:center}
+.logo-oficial{height:100px;margin:0 auto;width:auto;mix-blend-mode:multiply} /* funde el fondo claro de la imagen con el header */
+.logo-fb{display:none;font-weight:800;font-size:1.4rem;color:var(--verde-p)}
+.menu-btn{display:none;position:absolute;right:20px;top:22px;background:none;border:none;font-size:1.8rem;color:var(--verde-p);cursor:pointer}
+nav{border-top:1px solid var(--gris-claro)}
+nav ul{display:flex;justify-content:center;gap:6px;list-style:none;padding:9px 16px;overflow-x:auto;scrollbar-width:none;white-space:nowrap}
+nav ul::-webkit-scrollbar{display:none}
+nav a{display:block;padding:9px 16px;font-weight:700;font-size:.95rem;text-transform:uppercase;color:var(--verde-p);border-radius:999px;transition:.25s}
+nav a:hover{background:var(--verde);color:var(--blanco)}
+nav a.activo{background:var(--magenta);color:var(--blanco)}
+
+/* HERO */
+.hero{background:var(--verde);color:var(--blanco);padding:76px 0 84px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;bottom:-120px;width:380px;height:380px;border:2px solid var(--blanco);border-radius:50%;opacity:.22}
+.hero .contenedor{position:relative;z-index:2;text-align:center}
+.badge{display:inline-flex;align-items:center;gap:8px;background:var(--blanco);color:var(--verde-p);font-weight:800;font-size:.9rem;text-transform:uppercase;letter-spacing:.08em;padding:9px 22px;border-radius:999px;margin-bottom:20px}
+.badge i{color:var(--magenta)}
+.hero h1{font-size:clamp(2.3rem,5vw,3.7rem);text-transform:uppercase;margin-bottom:10px}
+.hero h1 span{background:var(--blanco);color:var(--magenta-o);display:inline-block;padding:.04em .3em;border-radius:.16em}
+.hero .sub{font-size:1.15rem;font-weight:700;color:var(--verde-p);margin-bottom:12px}
+.hero .desc{max-width:680px;margin:0 auto 26px;font-weight:300;font-size:1.50rem}
+#estadoConv{display:inline-flex;align-items:center;gap:8px;background:var(--magenta);color:var(--blanco);font-weight:700;font-size:1.3rem;padding:11px 24px;border-radius:999px;margin-bottom:34px}
+.hitos{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;max-width:980px;margin:0 auto 32px}
+.hito{background:var(--blanco);color:var(--verde-p);border-radius:14px;padding:22px 14px;text-align:center}
+.hito i{font-size:1.8rem;color:var(--magenta);display:block;margin-bottom:8px}
+.hito .k{font-size:.82rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--verde-o)}
+.hito .v{font-size:1.12rem;font-weight:800;margin-top:2px}
+
+/* AVISO IMPORTANTE: alto contraste y letra grande */
+.aviso{max-width:880px;margin:0 auto;background:var(--blanco);border-radius:16px;border-left:7px solid var(--magenta);box-shadow:0 12px 30px rgba(37,54,16,.28);padding:24px 26px;display:flex;gap:18px;align-items:flex-start;text-align:left}
+.aviso-circ{width:56px;height:56px;border-radius:50%;background:var(--magenta);color:var(--blanco);display:flex;align-items:center;justify-content:center;font-size:1.7rem;flex-shrink:0}
+.aviso h3{color:var(--magenta-o);text-transform:uppercase;font-size:1.2rem;margin-bottom:6px}
+.aviso p{color:var(--gris-osc);font-size:1.08rem}
+.aviso p strong{color:var(--verde-p)}
+
+/* Cinta de campaña */
+.cinta{background:var(--magenta);color:var(--blanco);overflow:hidden;padding:13px 0}
+.cinta-track{display:flex;gap:52px;white-space:nowrap;width:max-content;animation:desfile 30s linear infinite;font-weight:700;text-transform:uppercase;font-size:.9rem;letter-spacing:.1em}
+@keyframes desfile{to{transform:translateX(-50%)}}
+
+/* SECCIONES */
+section{padding:88px 0;scroll-margin-top:130px}
+.fondo-gris{background:var(--gris-claro)}
+.encabezado{max-width:860px;margin:0 auto 52px;text-align:center}
+.encabezado .kicker{color:var(--magenta);font-weight:700;text-transform:uppercase;font-size:.88rem;letter-spacing:.16em}
+.encabezado h2{font-size:clamp(1.9rem,3.2vw,2.6rem);text-transform:uppercase;color:var(--verde-p);margin:8px 0 12px}
+.encabezado p{color:var(--gris);font-size:1.1rem}
+.barra{width:64px;height:5px;background:var(--verde);border-radius:3px;margin:16px auto 0}
+.nota-formatos{max-width:780px;margin:22px auto 0;background:var(--blanco);border:2px solid var(--magenta);border-radius:14px;padding:16px 22px;color:var(--gris-osc);font-size:1.05rem;display:flex;gap:12px;align-items:flex-start;text-align:left}
+.nota-formatos i{color:var(--magenta);font-size:1.5rem;flex-shrink:0;margin-top:2px}
+.nota-formatos strong{color:var(--magenta-o)}
+
+/* Pasos */
+.pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.paso{background:var(--blanco);border:2px solid var(--gris-claro);border-radius:16px;padding:32px 24px;transition:.3s}
+.paso:hover{transform:translateY(-8px);border-color:var(--verde)}
+.paso .num{width:56px;height:56px;border-radius:50%;background:var(--verde);color:var(--blanco);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.35rem;margin-bottom:16px}
+.paso:nth-child(even) .num{background:var(--magenta)}
+.paso h3{color:var(--verde-p);text-transform:uppercase;font-size:1.1rem;margin-bottom:8px}
+.paso p{color:var(--gris-osc);font-size:1.03rem}
+
+/* MODALIDADES: 4 tarjetas en UN SOLO NIVEL */
+.mods{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.mod{background:var(--blanco);border:2px solid var(--gris-claro);border-top:6px solid var(--verde);border-radius:16px;padding:28px 18px 22px;display:flex;flex-direction:column;transition:.3s}
+.mod:nth-child(even){border-top-color:var(--magenta)}
+.mod:hover{transform:translateY(-8px);box-shadow:0 14px 30px rgba(37,54,16,.12)}
+.mod .circ{width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.8rem;color:var(--blanco);margin-bottom:14px}
+.mod:nth-child(odd) .circ{background:var(--verde)}
+.mod:nth-child(even) .circ{background:var(--magenta)}
+.mod h3{color:var(--verde-p);text-transform:uppercase;font-size:1.05rem;margin-bottom:8px}
+.mod p{color:var(--gris-osc);font-size:.95rem;margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.tag{background:var(--gris-claro);color:var(--verde-p);font-size:.76rem;font-weight:700;padding:5px 10px;border-radius:999px;display:inline-flex;align-items:center;gap:5px}
+.tag i{color:var(--magenta)}
+.mod .acciones{margin-top:auto;display:flex;flex-direction:column;gap:9px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 12px;border-radius:999px;font-weight:700;font-size:.8rem;text-transform:uppercase;transition:.25s;border:2px solid transparent;text-align:center}
+.btn-magenta{background:var(--magenta);color:var(--blanco)}
+.btn-magenta:hover{background:var(--magenta-o);transform:translateY(-2px)}
+.btn-linea{border-color:var(--verde);color:var(--verde-o)}
+.btn-linea:hover{background:var(--verde);color:var(--blanco)}
+.btn-linea-m{border-color:var(--magenta);color:var(--magenta-o)}
+.btn-linea-m:hover{background:var(--magenta);color:var(--blanco)}
+.nota-descarga{font-size:.84rem;color:var(--gris-osc);background:var(--gris-claro);border-radius:10px;padding:10px 12px;margin-top:2px}
+.nota-descarga i{color:var(--magenta)}
+
+/* Requisitos */
+.reqs{max-width:880px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+.req{background:var(--blanco);border:2px solid var(--gris-claro);border-radius:14px;padding:22px 24px;display:flex;gap:18px;align-items:flex-start;transition:.3s}
+.req:hover{border-color:var(--magenta);transform:translateX(6px)}
+.req .circ{width:54px;height:54px;border-radius:50%;background:var(--verde);color:var(--blanco);display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0}
+.req:nth-child(even) .circ{background:var(--magenta)}
+.req h3{color:var(--verde-p);font-size:1.08rem;text-transform:uppercase;margin-bottom:4px}
+.req p{color:var(--gris-osc);font-size:1.03rem}
+
+/* Información importante */
+.imp{max-width:880px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.imp-item{background:var(--blanco);border-left:6px solid var(--magenta);border-radius:12px;padding:20px 24px;display:flex;gap:16px;align-items:flex-start}
+.imp-item .n{font-weight:800;color:var(--magenta);font-size:1.35rem;flex-shrink:0}
+.imp-item p{color:var(--gris-osc);font-size:1.05rem}
+
+/* CTA inscripción */
+#inscripcion{background:var(--verde-p);color:var(--blanco);text-align:center}
+#inscripcion h2{font-size:clamp(1.9rem,3.4vw,2.7rem);text-transform:uppercase;margin-bottom:14px}
+#inscripcion p{font-weight:300;max-width:680px;margin:0 auto 12px;font-size:1.1rem}
+#inscripcion .btn{margin:22px auto 18px;background:var(--magenta);color:var(--blanco);font-size:1.08rem;padding:17px 38px}
+#inscripcion .btn:hover{background:var(--magenta-l)}
+.fechas-cta{font-size:1.02rem;opacity:.95}
+
+/* Contacto */
+.contacto-card{max-width:660px;margin:0 auto;background:var(--blanco);border:2px solid var(--gris-claro);border-radius:18px;padding:42px 34px;text-align:center}
+.contacto-card .circ{width:82px;height:82px;border-radius:50%;background:var(--magenta);color:var(--blanco);display:flex;align-items:center;justify-content:center;font-size:2.3rem;margin:0 auto 16px}
+.contacto-card h3{color:var(--verde-p);font-size:1.4rem}
+.contacto-card .cargo{color:var(--gris);font-size:1.02rem;margin:6px 0 18px}
+.mail-box{display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap}
+.mail{font-weight:800;color:var(--magenta);font-size:1.12rem}
+.btn-copiar{background:var(--verde);color:var(--blanco);border:none;border-radius:999px;padding:11px 22px;font-weight:700;font-size:.88rem;text-transform:uppercase;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:.25s;font-family:inherit}
+.btn-copiar:hover{background:var(--verde-o)}
+.copy-hint{font-size:.92rem;color:var(--gris);margin-top:14px}
+
+/* Footer */
+footer{background:var(--negro);color:#cfcfcf;padding:34px 0;text-align:center;font-size:.98rem}
+footer .vigilada{display:block;margin-top:10px;color:var(--blanco);font-weight:800;letter-spacing:.14em;font-size:.85rem;text-transform:uppercase}
+
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+/* Responsive de modalidades: 4 → 2 → 1 columna sin tarjetas sueltas */
+@media(max-width:1100px){.mods{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){
+  .mods{grid-template-columns:1fr}
+  .mod{padding:32px 24px}
+  .mod .btn{font-size:.95rem;padding:13px 20px}
+  .mod p{font-size:1.02rem}
+}
+@media(max-width:760px){
+  .menu-btn{display:block}
+  nav ul{display:none;flex-direction:column;align-items:center;padding-bottom:16px;white-space:normal}
+  nav ul.abierto{display:flex}
+  .aviso{flex-direction:column;align-items:center;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="barra-logo">
+    <!-- LOGO OFICIAL EN IMAGEN: guarda el archivo adjunto como img/logo-areandina.png -->
+    <img class="logo-oficial" id="logoImg" src="img/logo-areandina.png" alt="Areandina · Fundación Universitaria del Área Andina">
+    <div class="logo-fb" id="logoFB">AREANDINA</div>
+  </div>
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menú"><i class="la la-bars"></i></button>
+  <nav aria-label="Navegación principal">
+    <ul id="menu">
+      <li><a href="#proceso">Proceso</a></li>
+      <li><a href="#opciones">Modalidades</a></li>
+      <li><a href="#requisitos">Requisitos</a></li>
+      <li><a href="#inscripcion">Inscribirme</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio" style="padding-top:76px">
+  <div class="contenedor">
+    <span class="badge"><i class="la la-bullhorn"></i> Convocatoria 2027-1</span>
+    <h1>Opciones de Grado <span>Sin Costo</span></h1>
+    <p class="sub">Administración de Empresas · Modalidad Virtual</p>
+    <p class="desc">Elige tu modalidad, descarga el formato, diligéncialo e inscríbete antes del cierre.</p>
+    <div id="estadoConv"><i class="la la-hourglass-half"></i> Calculando fechas…</div>
+
+    <div class="hitos">
+      <div class="hito reveal"><i class="la la-door-open"></i><div class="k">Apertura</div><div class="v">01 octubre 2026</div></div>
+      <div class="hito reveal"><i class="la la-door-closed"></i><div class="k">Cierre</div><div class="v">30 octubre 2026</div></div>
+      <div class="hito reveal"><i class="la la-clipboard-check"></i><div class="k">Resultados aprox.</div><div class="v">Finales diciembre 2026</div></div>
+      <div class="hito reveal"><i class="la la-rocket"></i><div class="k">Inicio modalidades</div><div class="v">Mediados febrero 2027</div></div>
+    </div>
+
+    <div class="aviso reveal">
+      <div class="aviso-circ"><i class="la la-exclamation-circle"></i></div>
+      <div>
+        <h3>Importante</h3>
+        <p>La postulación <strong>no implica la asignación automática de cupo</strong>. Todas las propuestas serán evaluadas por el Comité de Investigación conforme a los lineamientos institucionales vigentes. Una vez finalizado el proceso de revisión, se enviará respuesta a cada postulante indicando la aceptación, o no, de su propuesta.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cinta" aria-hidden="true">
+  <div class="cinta-track">
+    <span>La generación que transforma no se detiene</span><span>✳</span>
+    <span>La generación que transforma no se detiene</span><span>✳</span>
+    <span>La generación que transforma no se detiene</span><span>✳</span>
+    <span>La generación que transforma no se detiene</span><span>✳</span>
+  </div>
+</div>
+
+<!-- PROCESO -->
+<section id="proceso">
+  <div class="contenedor">
+    <div class="encabezado reveal">
+      <span class="kicker">Paso a paso</span>
+      <h2>¿Cómo inscribirte?</h2>
+      <p>Sigue estos 4 pasos en orden para completar tu postulación.</p>
+      <div class="barra"></div>
+    </div>
+    <div class="pasos">
+      <div class="paso reveal"><div class="num">1</div><h3>Elige tu modalidad</h3><p>Revisa las 4 opciones y decide cuál se adapta mejor a tu perfil, disponibilidad y semestre actual.</p></div>
+      <div class="paso reveal"><div class="num">2</div><h3>Ve el video tutorial</h3><p>Mira el video de tu modalidad para entender cómo diligenciar el formato de inscripción correctamente.</p></div>
+      <div class="paso reveal"><div class="num">3</div><h3>Descarga y diligencia</h3><p>Descarga el formato de tu opción, complétalo con todos los datos requeridos y guárdalo en tu dispositivo. Recuerda: no se diligencia en línea.</p></div>
+      <div class="paso reveal"><div class="num">4</div><h3>Inscríbete en el formulario</h3><p>Ingresa al formulario oficial, adjunta el formato ya diligenciado y envía tu solicitud antes del 30 de octubre de 2026.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MODALIDADES: 4 EN UN SOLO NIVEL -->
+<section class="fondo-gris" id="opciones">
+  <div class="contenedor">
+    <div class="encabezado reveal">
+      <span class="kicker">Elige tu camino</span>
+      <h2>Modalidades disponibles</h2>
+      <p>Consulta el video tutorial y descarga el formato de la opción que elijas.</p>
+      <div class="barra"></div>
+      <div class="nota-formatos"><i class="la la-exclamation-triangle"></i>
+        <span><strong>Los formatos no se pueden diligenciar en línea.</strong> Descárgalos a tu dispositivo, diligéncialos localmente y cárgalos ya diligenciados en el formulario de inscripción. Sin el formato adjunto, tu propuesta no será evaluada.</span>
+      </div>
+    </div>
+    <div class="mods">
+
+      <article class="mod reveal">
+        <div class="circ"><i class="la la-building"></i></div>
+        <h3>Creación de Empresa</h3>
+        <p>Formula una idea de negocio con plan de mercadeo, financiero, administrativo y jurídico. Presenta tu propuesta ante el Comité de Investigación y susténtala una vez aprobada.</p>
+        <div class="tags"><span class="tag"><i class="la la-clock"></i>1 semestre</span><span class="tag"><i class="la la-users"></i>1–3 estudiantes</span><span class="tag"><i class="la la-laptop-house"></i>Misma modalidad</span></div>
+        <div class="acciones">
+          <a class="btn btn-linea" href="https://youtu.be/bENE9Skjp28?si=rJtnQcFF3WMpPYIl" target="_blank" rel="noopener"><i class="la la-play-circle"></i> Ver video tutorial</a>
+          <a class="btn btn-magenta" href="https://docs.google.com/document/d/13nTUSefNrzDV6qPb4ksBLg4IC-EvrYKC/edit?usp=sharing&ouid=115144016451349529989&rtpof=true&sd=true" target="_blank" rel="noopener"><i class="la la-file-download"></i> Descargar formato</a>
+          <p class="nota-descarga"><i class="la la-exclamation-circle"></i> No diligencies el archivo en línea: ve a Archivo → Descargar, complétalo en tu dispositivo y cárgalo diligenciado en el formulario.</p>
+        </div>
+      </article>
+
+      <article class="mod reveal">
+        <div class="circ"><i class="la la-briefcase"></i></div>
+        <h3>Pasantía</h3>
+        <p>Debes estar laborando en el área administrativa. Elabora una propuesta de mejora desde tu área funcional, la cual será evaluada y aprobada por el Comité de Pasantías.</p>
+        <div class="tags"><span class="tag"><i class="la la-clock"></i>1 semestre</span><span class="tag"><i class="la la-user-check"></i>Requiere empleo activo</span></div>
+        <div class="acciones">
+          <a class="btn btn-linea" href="https://youtu.be/CMK4LuMbkZI?si=dwru6864EjDHQFJA" target="_blank" rel="noopener"><i class="la la-play-circle"></i> Ver video tutorial</a>
+          <a class="btn btn-magenta" href="https://docs.google.com/document/d/1WEoRywuRGzL9dncgj-Zcfcpb-RxgQ1xf/edit?usp=sharing&ouid=115144016451349529989&rtpof=true&sd=true" target="_blank" rel="noopener"><i class="la la-file-download"></i> Descargar formato</a>
+          <a class="btn btn-linea-m" href="https://docs.google.com/document/d/1hwc1R7O3XNbgAGiLRYUuN7w85R3Z4QHd/edit?usp=sharing&ouid=115144016451349529989&rtpof=true&sd=true" target="_blank" rel="noopener"><i class="la la-stamp"></i> Carta de aval (empresa)</a>
+          <p class="nota-descarga"><i class="la la-exclamation-circle"></i> No diligencies el archivo en línea: ve a Archivo → Descargar, complétalo en tu dispositivo y cárgalo diligenciado en el formulario.</p>
+        </div>
+      </article>
+
+      <article class="mod reveal">
+        <div class="circ"><i class="la la-pen-fancy"></i></div>
+        <h3>Monografía</h3>
+        <p>Trabajo de investigación con iniciativa propia sobre un tema de aplicación de la disciplina administrativa. Presenta la propuesta al Comité de Investigación para su revisión y aprobación.</p>
+        <div class="tags"><span class="tag"><i class="la la-clock"></i>1 semestre</span><span class="tag"><i class="la la-users"></i>1–3 estudiantes</span><span class="tag"><i class="la la-laptop-house"></i>Misma modalidad</span></div>
+        <div class="acciones">
+          <a class="btn btn-linea" href="https://drive.google.com/file/d/1L0utXxzOP6T81qjXcIwFKrSEfxHVwxoL/view?usp=sharing" target="_blank" rel="noopener"><i class="la la-play-circle"></i> Ver video tutorial</a>
+          <a class="btn btn-magenta" href="https://docs.google.com/spreadsheets/d/1wTOJsl3qcXn9-FtCY9eznOWGWB3k6rbo/edit?usp=sharing&ouid=115144016451349529989&rtpof=true&sd=true" target="_blank" rel="noopener"><i class="la la-file-download"></i> Descargar formato</a>
+          <p class="nota-descarga"><i class="la la-exclamation-circle"></i> No diligencies el archivo en línea: ve a Archivo → Descargar, complétalo en tu dispositivo y cárgalo diligenciado en el formulario.</p>
+        </div>
+      </article>
+
+      <article class="mod reveal">
+        <div class="circ"><i class="la la-microscope"></i></div>
+        <h3>Semilleros de Investigación</h3>
+        <p>Participa en proyectos de investigación institucionales como asistente o semillero. El producto final es un artículo académico enmarcado en las líneas de investigación del programa.</p>
+        <div class="tags"><span class="tag"><i class="la la-clock"></i>1 año</span><span class="tag"><i class="la la-users"></i>1–3 estudiantes</span><span class="tag"><i class="la la-graduation-cap"></i>Desde 7° semestre</span></div>
+        <div class="acciones">
+          <a class="btn btn-linea" href="https://drive.google.com/file/d/1B9A1OtKukg1FFGq3M7IuyEsEbdlWvZBk/view?usp=sharing" target="_blank" rel="noopener"><i class="la la-play-circle"></i> Ver video tutorial</a>
+          <a class="btn btn-magenta" href="https://docs.google.com/document/d/1Fy3_tmjbbt5Ve78ochSiL3lgkk7zHJ_8/edit?usp=sharing&ouid=115144016451349529989&rtpof=true&sd=true" target="_blank" rel="noopener"><i class="la la-file-download"></i> Descargar formato</a>
+          <p class="nota-descarga"><i class="la la-exclamation-circle"></i> No diligencies el archivo en línea: ve a Archivo → Descargar, complétalo en tu dispositivo y cárgalo diligenciado en el formulario.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- REQUISITOS -->
+<section id="requisitos">
+  <div class="contenedor">
+    <div class="encabezado reveal">
+      <span class="kicker">Tenlo en cuenta</span>
+      <h2>Requisitos clave</h2>
+      <p>Cumple estas condiciones para que tu inscripción sea válida.</p>
+      <div class="barra"></div>
+    </div>
+    <div class="reqs">
+      <div class="req reveal"><div class="circ"><i class="la la-paperclip"></i></div><div><h3>Formato obligatorio</h3><p>El formato diligenciado debe adjuntarse en el formulario. Sin él, la propuesta no será evaluada por el Comité de Investigación.</p></div></div>
+      <div class="req reveal"><div class="circ"><i class="la la-users"></i></div><div><h3>Grupos: un solo registro</h3><p>En propuestas grupales, únicamente un integrante del equipo realiza la inscripción en el formulario de Google.</p></div></div>
+      <div class="req reveal"><div class="circ"><i class="la la-user"></i></div><div><h3>Pasantías: es individual</h3><p>Esta modalidad no aplica para grupos. Cada estudiante debe inscribirse de forma independiente con su propio formato.</p></div></div>
+      <div class="req reveal"><div class="circ"><i class="la la-envelope"></i></div><div><h3>Correo institucional</h3><p>Los resultados de aprobación se notificarán únicamente al correo institucional @areandina.edu.co.</p></div></div>
+      <div class="req reveal"><div class="circ"><i class="la la-book-open"></i></div><div><h3>Normas APA 7ª edición</h3><p>Todos los documentos escritos deben seguir las normas APA en su séptima edición antes de ser entregados.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- INFORMACIÓN IMPORTANTE -->
+<section class="fondo-gris" id="importante">
+  <div class="contenedor">
+    <div class="encabezado reveal">
+      <span class="kicker">Antes de inscribirte</span>
+      <h2>Información importante</h2>
+      <p>Lee con atención cada punto.</p>
+      <div class="barra"></div>
+    </div>
+    <div class="imp">
+      <div class="imp-item reveal"><span class="n">1</span><p>El formato de propuesta debe estar completamente diligenciado y adjunto al momento de enviar el formulario. Propuestas sin formato no serán evaluadas.</p></div>
+      <div class="imp-item reveal"><span class="n">2</span><p>Los resultados de aprobación se comunicarán a <strong>finales de diciembre de 2026</strong>, una vez el Comité de Investigación evalúe todas las propuestas recibidas.</p></div>
+      <div class="imp-item reveal"><span class="n">3</span><p>Las modalidades aprobadas iniciarán a <strong>mediados de febrero de 2027</strong>. La notificación llegará exclusivamente al correo institucional de Areandina.</p></div>
+      <div class="imp-item reveal"><span class="n">4</span><p>La opción de grado Pasantías es estrictamente individual. No aplica para grupos. La propuesta de mejora debe estar relacionada con el área administrativa donde el estudiante labora.</p></div>
+      <div class="imp-item reveal"><span class="n">5</span><p>Semilleros de Investigación requiere mínimo estar en séptimo semestre y tiene una vinculación de 1 año. El producto final es un artículo académico enmarcado en las líneas de investigación del programa.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- INSCRIPCIÓN -->
+<section id="inscripcion">
+  <div class="contenedor reveal">
+    <h2>¿Listo para inscribirte?</h2>
+    <p>Adjunta el formato diligenciado (y la carta de aval si es Pasantía) directamente en el formulario.</p>
+    <p class="fechas-cta">📅 Las inscripciones están abiertas del <strong>1 al 30 de octubre de 2026</strong>.<br>📧 La respuesta a tu postulación se enviará a <strong>finales de diciembre de 2026</strong> al correo institucional.</p>
+    <a class="btn" href="https://forms.gle/Co9aDvP5kV9ev6NX7" target="_blank" rel="noopener"><i class="la la-edit"></i> Ir al formulario de inscripción</a>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="contenedor">
+    <div class="encabezado reveal">
+      <span class="kicker">Estamos para ayudarte</span>
+      <h2>¿Tienes dudas?</h2>
+      <p>Escríbele directamente a la coordinadora del programa.</p>
+      <div class="barra"></div>
+    </div>
+    <div class="contacto-card reveal">
+      <div class="circ"><i class="la la-user-graduate"></i></div>
+      <h3>Laura Rojas</h3>
+      <p class="cargo">Coordinadora · Administración de Empresas Virtual<br>Fundación Universitaria del Área Andina</p>
+      <div class="mail-box">
+        <span class="mail" id="mailCoor">lrojas149@areandina.edu.co</span>
+        <button class="btn-copiar" id="btnCopiar"><i class="la la-copy"></i> Copiar</button>
+      </div>
+      <p class="copy-hint">Copia el correo y escríbenos desde tu plataforma de correo preferida.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="contenedor">
+    <p>© 2026 · AREANDINA · Fundación Universitaria del Área Andina · Administración de Empresas Virtual</p>
+    <span class="vigilada">VIGILADA MINEDUCACIÓN</span>
+  </div>
+</footer>
+
+<script>
+/* Respaldo del logo: si no encuentra img/logo-areandina.png prueba el remoto y, al fallar, texto */
+const logo=document.getElementById('logoImg');
+logo.addEventListener('error',()=>{
+  if(!logo.dataset.retry){logo.dataset.retry='1';logo.src='https://www.areandina.edu.co/themes/custom/areandina/logo.svg';}
+  else{logo.style.display='none';document.getElementById('logoFB').style.display='block';}
+});
+
+/* Menú móvil */
+const menuBtn=document.getElementById('menuBtn'),menu=document.getElementById('menu');
+menuBtn.addEventListener('click',()=>menu.classList.toggle('abierto'));
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('abierto')));
+
+/* Header sombra + enlace activo */
+const header=document.getElementById('header');
+const links=[...menu.querySelectorAll('a')];
+const secciones=links.map(a=>document.querySelector(a.getAttribute('href')));
+window.addEventListener('scroll',()=>{
+  header.classList.toggle('sombra',scrollY>10);
+  let i=secciones.length-1;
+  while(i>0&&secciones[i].getBoundingClientRect().top>190)i--;
+  links.forEach((a,j)=>a.classList.toggle('activo',j===i));
+},{passive:true});
+
+/* Aparición al hacer scroll */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* Estado dinámico: apertura 01 oct 2026 · cierre 30 oct 2026 */
+(function(){
+  const chip=document.getElementById('estadoConv');
+  const apertura=new Date(2026,9,1,0,0,0);
+  const cierre=new Date(2026,9,30,23,59,59);
+  const ahora=new Date();
+  const dias=Math.ceil((cierre-ahora)/864e5);
+  const diasAp=Math.ceil((apertura-ahora)/864e5);
+  if(ahora<apertura){chip.innerHTML='<i class="la la-hourglass-half"></i> La convocatoria abre en '+diasAp+' día'+(diasAp===1?'':'s');}
+  else if(ahora<=cierre){chip.innerHTML='<i class="la la-bullhorn"></i> ¡Inscripciones abiertas! Cierran en '+dias+' día'+(dias===1?'':'s');}
+  else{chip.innerHTML='<i class="la la-lock"></i> Convocatoria cerrada · Resultados a finales de diciembre de 2026';}
+})();
+
+/* Copiar correo */
+const btnCopiar=document.getElementById('btnCopiar');
+btnCopiar.addEventListener('click',async()=>{
+  const mail=document.getElementById('mailCoor').textContent.trim();
+  try{await navigator.clipboard.writeText(mail);}
+  catch(e){const t=document.createElement('textarea');t.value=mail;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();}
+  btnCopiar.innerHTML='<i class="la la-check"></i> ¡Copiado!';
+  setTimeout(()=>btnCopiar.innerHTML='<i class="la la-copy"></i> Copiar',2200);
+});
+</script>
+</body>
+</html>
